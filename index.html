@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Sports Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #1c1c1c;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #0d6efd;
+            border-radius: 5px;
+        }
+        section {
+            padding: 20px;
+        }
+        .lineup, .scores, .blogs, .news, .social {
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h2 {
+            color: #0d6efd;
+        }
+        footer {
+            text-align: center;
+            background: #1c1c1c;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Irish Sports Media</h1>
+        <p>Your hub for Roblox League of Ireland news and updates!</p>
+    </header>
+
+    <nav>
+        <a href="#lineups">Live Lineups</a>
+        <a href="#scores">Scores</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#news">News Reports</a>
+        <a href="#social">Social Media</a>
+    </nav>
+
+    <section id="lineups" class="lineup">
+        <h2>Live Lineups</h2>
+        <p>Customize and update lineups in real-time.</p>
+        <button onclick="updateLineups()">Update Lineups</button>
+        <div id="lineup-content">
+            <p>No lineup updates yet.</p>
+        </div>
+    </section>
+
+    <section id="scores" class="scores">
+        <h2>Roblox League of Ireland Scores</h2>
+        <p>Stay updated with the latest match scores!</p>
+        <ul>
+            <li>Team A vs. Team B: 2 - 1</li>
+            <li>Team C vs. Team D: 0 - 3</li>
+        </ul>
+    </section>
+
+    <section id="blogs" class="blogs">
+        <h2>Blogs</h2>
+        <article>
+            <h3>Latest Blog Title</h3>
+            <p>A brief excerpt from the blog. Click below to read more!</p>
+            <a href="#">Read More</a>
+        </article>
+    </section>
+
+    <section id="news" class="news">
+        <h2>News Reports</h2>
+        <ul>
+            <li><a href="#">News Report 1</a></li>
+            <li><a href="#">News Report 2</a></li>
+            <li><a href="#">News Report 3</a></li>
+        </ul>
+    </section>
+
+    <section id="social" class="social">
+        <h2>Social Media</h2>
+        <p>Follow us on our social media platforms:</p>
+        <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Irish Sports Media. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Example script for updating lineups
+        function updateLineups() {
+            const lineupContent = document.getElementById('lineup-content');
+            lineupContent.innerHTML = `
+                <ul>
+                    <li>Player 1 - Position</li>
+                    <li>Player 2 - Position</li>
+                    <li>Player 3 - Position</li>
+                </ul>
+                <p>Updated at ${new Date().toLocaleTimeString()}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
